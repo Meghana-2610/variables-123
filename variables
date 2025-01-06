@@ -1,0 +1,30 @@
+-react native is used to develop mobile application
+-Electron.js is used to develop desktop application
+-react.js is used to develop web application
+
+what is JavaScript?
+-it is used to convert static page into dynamic page 
+
+Data types is of two types they are:
+1)PRIMITIVE DATATYPES:
+number
+string
+Boolean
+undefined
+null(data-type object)
+bigint
+
+2)NON PRIMITIVE DATATYPES:
+class
+object
+array
+functions
+maps
+
+variables are of three types:
+var
+const
+let
+
+-variables to store any kind of data
+-redeclaring var is accepted
