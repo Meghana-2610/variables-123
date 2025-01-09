@@ -1,0 +1,65 @@
+Conditional statements:
+-to make the set instruction(block of code)(conditional block) execute only when the given condition is True
+Block of code: set of instructions
+-it will execute only when the specific condition true
+Condition: An expression that evaluate an result(True/False)
+EX: console.log(5>6)
+Methods:
+If:
+Syntax:
+If(condition){
+---block of code
+}
+EXAMPLE CODE:
+
+	Ø let a=5
+        let b=10
+        if(a<b){
+            document.write("hi hansi","<br>")
+        }
+        document.write("welcome to India")
+Output:
+Hi hansi
+Welcome to India
+
+If-else:
+EXAMPLE CODE:
+
+	Ø let a=5
+        let b=10
+        if(a>b){
+            document.write("hi hansi","<br>")
+        }else{
+            document.write("Rishi","<br>")
+        }
+        document.write("welcome to India")
+
+Output:
+Rishi
+welcome to India
+
+
+Elseif
+EXAMPLE CODE:
+	Ø  age=prompt("enter your age?")
+        name=prompt("enter your name?")
+        if(age<18){
+            alert(name + " you are too young to marry")
+        }else if (age>35){
+            alert(name + "you are too old to marry")
+        }else{
+            alert(name + " you are perfect to marry")
+        }
+Output:
+if age is 18-35 you are perfect to marry
+
+Switch:
+EXAMPLE CODE:
+	
+	Ø  let a=prompt("Enter the score of 1st Player")
+	        let b=prompt("Enter the score of 2nd Player")
+	        if((a>300 || b>300) && a+b<500){
+	            document.write("You are eligible to team up")
+	        }else{
+	            document.write("You are not eligible to team up")
+	        }
