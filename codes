@@ -1,0 +1,40 @@
+// let a=parseInt(prompt("Enter a value:"))
+       // let b=parseInt(prompt("Enter a value:"))
+       // let c=parseInt(prompt("Enter a value:"))
+        //if(a>b && a>c){
+       // document.write("a is greater than b and c")
+    //}else if (b>a && b>c){
+     //   document.write("b is greater than a and c")
+   // }else{
+     //   document.write("c is greater than a and b")
+
+    //}
+    
+
+    let a=parseInt(prompt("Enter a value:"))
+     let b=parseInt(prompt("Enter b value:"))
+     let c=parseInt(prompt("Enter c value:"))
+    if(a>b && a>c){
+       document.write(`${a} is greater than b and c`)
+    }else if (b>a && b>c){
+       document.write(`${b} is greater than a and c`)
+    }else{
+       document.write(`${c} is greater than a and b`)
+   }
+
+   let a=parseInt(prompt("Enter the total number of working days: "))
+        let b=parseInt(prompt("Enter the number of days you were absent: "))
+       let c=a-b
+        let d=(c/a)*100
+        if(d<75){
+           document.write("You are not eligible to write the exam as your attendance percentage is "+d+"%")
+        }else{
+            document.write("You are eligible to write the exam as your attendance percentage is "+d+"%")
+        }  
+
+       let number=parseInt(prompt("Enter a number"))
+        if(number %2==0 && number %3==0){
+            document.write("number is divisible by 2 and 3 both")
+        }else{
+            document.write("it is not divisible by 2 and 3 both")
+        }
