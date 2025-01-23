@@ -1,0 +1,56 @@
+Functions:
+-A function is reusable block of code
+-It can be called any where in the program 
+-Reusable code: using any existing code without writing it ever we need
+-You can use the same code with different argument to get the results.
+
+ex:
+key word = Function
+()
+Parameters = values(variables)which are declared inside the () while defining a function.
+Arguments: values which are passed through the parameters.
+
+#syntax:
+
+function greet(){
+            console.log("hello meghana")
+                }
+                greet()
+                console.log("hi naavs")
+                greet()
+                console.log("hi navaneetha")
+                greet()
+ 
+example:function parameters
+
+function g(name){
+                    console.log("hello "+name)
+                }
+                let name=prompt("Enter your name?")
+
+                g(name)
+
+#add two numbers
+#two arguments
+
+Function return:
+-The return statement can be used to return the value to function call
+
+Example:
+function a(a,b){
+return a+b;
+}
+let n1=parseFloat(prompt("Enter a number1")
+let n2=parseFloat(prompt("Enter a number2")
+#calling a function
+let result = a(n1,n2);
+#display the result
+console.log("The sum is:" +result)
+
+Example:
+sum=function(n1,n2){
+                    let r=n1+n2
+                    return r
+                }
+                console.log(sum(8,9))
+#output:17
