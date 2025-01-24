@@ -1,0 +1,92 @@
+Arrow functions:
+-es6 version
+-more readable and more structure
+-anonymous function
+-Arrow function with parameter
+
+Example:
+Let x=(x,y)=>{
+console.log(x+y)
+}
+x(20,30)
+x(40,50)
+
+Example:
+Arrow function with one argument
+Let greet =x=>console.log(x);
+Greet('hello')
+
+Ex:
+Arrow function without argument:
+Let greet=()=>console.log("hello")
+Greet()
+
+Ex:
+Arrow function as an expression
+Let 18;
+Let welcome=(age<18)?
+()=>console.log('hi naavs');
+()=>console.log('hi meghana');
+Welcome()
+
+Ex:
+Function task1(){
+console.log("task1:start"
+}
+Function task2(){
+console.log("task2:start"
+}
+Function task3(){
+console.log("task3:start"
+}
+Task1()
+Task2()
+Task3()
+JavaScript callbacks:
+A call back function is a function that is passed argument to another function;;
+Function greet(name,callback){
+console.log("hello,${name}!'
+}
+Function sayGoodbye(){
+console.log('hello,${name}!'
+callback();
+}
+Evental completion
+3 states:
+1)pending:still not completed -continuing
+2)fulfilled==task completed
+3)rejected==the operation is failed
+
+Ex:
+Let myPromise=new Promise((resole,reject)=>
+(let success=true;
+
+if(success){
+Resolve("task completed");
+};else{
+Reject("tsk failed")
+}
+};
+)
+#functions
+#oops
+#file handling
+#multithreading
+#exception handling
+#json
+
+
+        // let c=()=>{
+        //     console.log("hi meghana")
+        // }
+        // c()
+        // Let 18;
+        // Let welcome=(age<18)?
+        // ()=>console.log('hi naavs');
+        // ()=>console.log('hi meghana');
+        // Welcome()
+        // console.log("hi Meghana");
+        // setTimeout(()=>{
+        //     console.log("hi i am waiting")
+        // },5000);
+        // console.log("i am in lab")
