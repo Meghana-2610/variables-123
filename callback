@@ -1,0 +1,81 @@
+
+
+callback functions:
+u can pass the callback functions as a argument to another function
+
+Execution:
+The function receiving the callback will execute the callback at some point during execution(often at the end or after an asynchronous operation is done.
+
+example:
+function mainfunction(callback){
+console.log("Execution main function");
+callback()
+//here we cal the callback function
+}
+function callbackfunction(){
+console.log("callback function executed");
+}
+mainfunction(callbackfunction);
+
+explanation:
+mainfunction takes a parameter callback
+callbackfunction is passed as an argument to mainfunction inside the mainfunction 
+
+o/p:
+mainfunction(callbackfunction);
+it will execute inside the main function
+it will print("Executing main function");
+Then it reaches to the callback();
+where it call the function which is passed to maintain
+
+Example:2
+
+passing a Named function as a callback; 
+
+function greet(name ,callback){
+console.log("hello" +name);
+callback();
+//executes the callback function  after greeting 
+}
+function goodbye(){
+console.log("Goodbye")
+}
+greet("Meghana" ,goodbye);
+
+
+example:
+using anonymous function as callback
+
+Anonymous function as callback;
+function(error, data){
+  if(error) {
+          console.log(error);
+}else{
+console.log(data);
+}
+}
+
+function greet(name ,callback){
+console.log("hello"+name);
+callback();
+}
+Greet("pavani",function(){
+console.log("goodbye")
+}};//anonymous function as callback
+
+ex:4
+Asynchronous callback with setTimeout
+function fetchData(callback){
+console.log("Fetching Data...")
+console.log("Data fetched");
+callback();
+},2000);
+}
+
+Function processData(){
+console.log("processing the fetched data...")
+}
+fetchData("processData");
+
+Ex:map() is a built in array method that callback function to process each item in array.
+The callback here doubles each number (num*2 
