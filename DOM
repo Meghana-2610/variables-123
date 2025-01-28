@@ -1,0 +1,54 @@
+DOM(Document Object Model)
+-this is used in web development used to interact and manipulate(change) the html documents.
+-When the webpage loaded, the browser create DOM of the web page
+-When the html file is loaded into the browser, then the JavaScript directly cannot understand the html document.
+Dom is basically the representation of the same html document but in a tree like structure composed of object
+
+key points:
+1)structure: The DOM represents the structure of html document as a tree. Each node in tree represents the elements, an, an attribute or text
+2)Manipulation: using JavaScript you can interact with elements like buttons paragraph on the webpage changing the content, styles can add or remove elements
+3)Event handling: you can handle the interactions like click or pressing the button
+4)W3C: world wide web consortium
+
+Dom:
+-document is the entry point of Dom 
+
+
+<html>
+<head>
+<title>MRU <title>
+<head>
+</body>
+<h1>I am in hyd</h1>
+</body>
+</html>
+
+Methods of Document objects:
+-used to interact with and manipulate the document 
+Getting Element:
+1)Getting an element by id:
+2)Getting an Element by class:
+3)Getting an Element by tag:
+4)Getting an Element by query selector:
+
+
+/* .a{
+            color:blue;
+        }
+        .b{
+            color:brown;
+        }
+        .c{
+            color:blueviolet;
+        }
+    </style>
+</head>
+<body>
+        <h1 class="a" >Meghana </h1>
+        <h1 class ="b">nandu </h1>
+        <h1 class ="c">navani</h1>
+        <h1 class ="b">navaneetha</h1>
+        <h1 class ="a">vini</h1>
+        <h1 class ="c">nandhitha</h1> */
+
+
