@@ -1,0 +1,70 @@
+getElementByClassName():
+returns all the elements having the same class name
+
+example:
+<h1 id="a" class="a"> I am meghana</h1>
+<h2 id="b" class="b"> I am naavs</h2>
+<h1 id="c" class="a"> I am nandu</h1>
+
+<script>
+    let a = document.getElementsByClassName('a'); // Correct method name
+    console.log(a);
+
+    for(let i = 0; i < a.length; i++) { // Use 'a' instead of 'x'
+        console.log(a[i]);
+    }
+
+
+getElementByClassId():
+returns an html collection object
+An html collection is an array like list of html elements
+The length property 
+
+getting elements by tagname:
+getElementsByTagName():
+
+example:
+<h1 id = "a" class="a"> I am meghana</h1>
+        <h1 id="b" class="b"> i am megha</h1>
+        <h1 id="c" class="c"> i am naavs</h1>
+        <script>
+            let a=document.getElementByTagName('a')
+            console.log(a)
+
+            for(let i=0; i<x<length;i++){
+                console.log()
+            }
+            </script>
+
+-this method takes a tag name as string and returns an html collection object
+
+1)conditional
+2)loops
+3)functions
+4)oops
+5)exception
+
+-The document query selector method select an html elements by tagname,by d,class name
+-Queryselector can be used to select html element by its tagname,id,classname,it only select first element  
+
+example:
+<h1 id = "a" class="a"> I am meghana</h1>
+<h1 id="b" class="b"> i am megha</h1>
+<h1 id="c" class="c"> i am naavs</h1>
+<h2 class="a" i am kavya></h2>
+<script>
+let a=document.querySelector('h1')
+console.log(x)
+
+QueryselectorAll:
+-it selects all the ntml elements by its class name and tagname
+
+Manipulating Elements:
+to create html Elements:
+createElements() - create a new element 
+-method -document.createElement()
+
+textContent:
+single element:
+To create multiple elements
+
