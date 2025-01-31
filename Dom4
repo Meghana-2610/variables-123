@@ -1,0 +1,80 @@
+DOM:
+InsertBefore():insert a new node before an existing node or child node of a specific parent node
+-this requires a reference to both the new node and the existing node you want to insert before
+
+   <div id="a"> 
+        <h1>Meghana</h1>
+        <h1>ravi</h1>
+        <h1>ram</h1>
+    </div>
+    <div id="b">
+        <h1>sam</h1>
+        <h1>venkat</h1>
+    </div>
+    
+    <script>
+          let n=document.createElement("h2")
+    n.textContent="RAHUL"
+    //get the parent element
+    let p=document.getElementById('a')
+    let l=document.getElementById('r')
+    p.insertBefore(n,l)
+    document.write(p)
+    console.log(p)
+    </script>
+
+example2:
+<div id="a">
+      <h1 id="t">meghana</h1>
+      <h1 id="r">megha</h1>
+  </div>
+  <div id="b">
+      <h2>sai</h2>
+      <h2 id="u">pardhu</h2>
+  </div>
+  <script>
+      let n = document.createElement("h4");
+      n.textContent = "tagore";
+      let p = document.getElementById("a");
+      let l = document.getElementById("r");
+      p.insertBefore(n, l);
+      console.log(p);
+  
+      let m = document.createElement("h4");
+      m.textContent = "naresh";
+      let q = document.getElementById("a");  
+      let s = document.getElementById("t");  
+      q.insertBefore(m, s);  
+      console.log(q);
+
+      let mm = document.createElement("h4");
+      mm.textContent = "anil";
+      let qq = document.getElementById("b");  
+      let ss = document.getElementById("u");  
+      qq.insertBefore(mm, ss);  
+      console.log(qq);
+  </script>
+
+to remove an element:
+let b=document.getElementById("b")
+b.remove()
+
+To remove an child element
+-we use built-in method
+
+<div id="a"> 
+    <h1 id="re">ravi</h1>
+    <h1>ram</h1>
+</div>
+<div id="b">
+    <h1>sam</h1>
+    <h1>venkat</h1>
+</div>
+
+<script>
+    let n=document.getElementById('a')
+    let l=document.getElementById('re')
+    console.log(l)
+    n.removeChild(l)
+</script>
+
