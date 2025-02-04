@@ -1,0 +1,69 @@
+React.js
+-create a element;
+-js
+-let a =document.createElement('h1');
+
+-to create
+<h1> sai</h1>
+-document.createElement('h1')
+
+to create a element by react.js
+-react.createElement('h1')
+syntax:
+React.createElement(type ,properties)
+-type=tag name(div,h1,p)
+props:classname ,id,onClick
+
+-reactDOM.createRoot()
+-ReactDOM.render() -to display the element
+
+calling a function in jsx:
+}
+//create a root and render the greeting component
+const root =ReactDOM.createRoot(document.getElementById('a'));
+root.render()
+syntax:
+Reactelement-what to render
+container=where to render
+
+<script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+
+    <div id="root"></div>
+
+    <script>
+        function App() {
+            return React.createElement('h1', null, 'Hello, Meghana!');
+        }
+        ReactDOM.render(React.createElement(App), document.getElementById('root'));
+
+(javascript XML) is a syntax extension 
+key points:
+<br/>
+
+with jsx:
+<div id=""root></div>
+    <script src="4-2-25.js"></script>
+    <h1>I am vidya</h1>
+    <div id ="app"></div>
+    <script type="text/babel">const element =<h1>Hello JSX</h1> </script>
+    const root = ReactDOM.craeteROot(document.getElementById('app'))
+    root.render(element)
+
+without jsx:
+ <div id ="app"></div>
+    const element =<h1>Hello JSX</h1> </script>
+    const root = ReactDOM.craeteROot(document.getElementById('app'))
+    root.render(element)
+    <script type="text/babel">
+        const n=10;
+        const m=<h1>react is{m*} times better than jsx</h1>
+        const r=ReactDOM.createRoot(document.getElementByID('a')
+        r.render(m)
+    )
+
+Expression in jsx:
+-with jsx  you can write the expressions inside the {}
+-This allows us to embed (insert)javascript expressions directly;
+
+
