@@ -1,0 +1,71 @@
+React.js
+-create a element;
+-js
+-let a =document.createElement('h1');
+
+-to create
+<h1> sai</h1>
+-document.createElement('h1')
+
+to create a element by react.js
+-react.createElement('h1')
+syntax:
+React.createElement(type ,properties)
+-type=tag name(div,h1,p)
+props:classname ,id,onClick
+
+-reactDOM.createRoot()
+-ReactDOM.render() -to display the element
+
+calling a function in jsx:
+}
+//create a root and render the greeting component
+const root =ReactDOM.createRoot(document.getElementById('a'));
+root.render()
+syntax:
+Reactelement-what to render
+container=where to render
+JSX(javascript XML) is a syntax extension javascript
+-it aloes us to write html code in react
+-the jsx code gets compiledinto 
+Babel:a tool converts html code into js
+-all the html tags should be closed.
+
+
+<!-- <div id="app"></div>
+    <script type="text/babel">
+        const element=<h1 classname="a">Hello JXS!</h1>
+        const e=document.getElementById('app')
+        const root=ReactDOM.createRoot(e)
+        root.render(element)
+    </script> -->
+
+    <!-- <div id="app"></div>
+    <script type="text/babel">
+        const e=React.createElement('h1',{id:'a'},"I am sai")
+        const element=document.getElementById('app')
+        const root=ReactDOM.createRoot(element)
+        root.render(e)
+    </script> -->
+
+    <!--<div id="app"></div>
+    <script type="text/babel">
+        const n=10;
+        const m=<h2>React is {n*2} times better than jsx</h2>
+        const root=ReactDOM.createRoot(document.getElementById('app'))
+        root.render(m)
+    </script>-->
+
+    <!-- <div id="app"></div>
+    <script type="text/babel">
+        const App=()=>{
+        const isLoggedIn=false;
+        return(
+            <div>
+                {isLoggedIn ? (<h1>Welcome back user!</h1>):(<h1>please log in.</h1>)}
+                {isLoggedIn && (<h2>you have new notification</h2>)}
+            </div> 
+        );
+        };
+        const root=ReactDOM.createRoot(document.getElementById('app'))
+            root.render(<App/>) -->
