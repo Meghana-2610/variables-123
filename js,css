@@ -1,0 +1,56 @@
+public/index.html:The main html file that serves as the entry point for the app
+index.js:The javascript entry point for the react app where the DOM is rendered
+App.js:The main component that serves as the root of the component 
+components:A folder to store reusable components
+1)components are the core building blocks of a react application
+-They help to create reusable block of code
+-if anything goes wrong in UI it is very easy to find out and solve that
+
+app.js:
+import React from react;
+import'./App.css';
+const welcome=()=><h1 className='message'>Hello Meghana</h1>
+function App(){
+return(
+<div className='App'>
+<Welcome>
+</div>
+)
+}
+export default App;
+
+app.css:
+.message{
+color:blue;
+backgroundcolor:green;
+font-size:40px;
+text-align:center;
+width:30%
+margin-left:80px;
+}
+
+welcome.js:
+import React from react;
+const welcome=(props)={
+const{name ,greeting}=props;
+return(
+<h1 className='Message' {greeting},{name} <h1>
+)
+}
+export default Welcome;
+
+app.js:
+import React from react;
+import welcome from './welcome'
+const App=()=>{
+return(
+<div style={textalign:'center',color:'red'}}>
+welcome name="Meghana" greeting="Hello"/>
+welcome name="megha" greeting="h1"/>
+</div>
+)
+export default App;
+
+conditional rendering:
+-Lists
+-Keys
