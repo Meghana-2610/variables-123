@@ -1,0 +1,79 @@
+Event handling in react:
+-Event handling in react is how you make your app to do something when the user interacts with it
+-Like clicking a button,submitting a form
+1)clicking a button by(onclick)
+2)pressing a key(keyDown)
+3)Moving the mouse(onmousemove)
+4)Typing a textbox(onChange)
+
+how to use Events in React:
+-Use camelCase fopr event names
+-pass a function to the event(not to a function call) . This function will run when the event happens
+
+a)click Event (onclick):
+import React from 'react';
+function App(){
+  const handleClick=()=>{
+    alert("Button click");
+  }
+  return(
+    <button onClick={handleClick}>Click me</button>
+  )
+  
+}
+export default App;
+
+b)Change event (onChange)
+This happens wen you tpe in a text box
+key points:
+Target is a property of the event object and is predefined by javascript for DOM events
+event.target always refers the element that triggered the event
+-event target.value:The value of input elements buttons form elements
+
+import React, { useState } from 'react';
+function App(){
+  const[text,setText]=useState("")
+
+  const handleChange=(event)=>{
+    setText(event.target.value)
+  }
+  return(
+    <div>
+      <input type="text" value={text} onChange={handleChange}></input>
+      <p>Your Text: {text}</p>
+    </div>
+  )
+
+}
+export default App;
+
+
+c) mouse event:
+these happens when we 
+import React, { useState } from 'react';
+
+function App() {
+  const [isHovered, setIsHovered] = useState(false);
+
+  const handleMouseEnter = () => {
+    setIsHovered(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsHovered(false);
+  };
+  return (
+    <div>
+      <button
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
+        style={{
+          backgroundColor: isHovered ? 'lightgrey' : 'lightblue',
+          color: isHovered ? 'black' : 'white',
+        }}
+      >Hover me</button>
+    </div>
+  );
+}
+export default App;
+
